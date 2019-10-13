@@ -1,0 +1,193 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block body %}
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+<title>My Skillset</title>
+<style type="text/css">
+body {
+	background: #161616 url("/static/s1.gif") top left repeat;
+	margin: 0;
+	padding: 0;
+	font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+	height: 100%;
+	color:#fff;
+	  
+}
+
+* {margin: 0; padding: 0; outline: none;}
+
+img {border: none;}
+
+a { 
+	text-decoration:none; 
+	color:#00c6ff;
+}
+
+h1 {
+	font: 4em normal Arial, Helvetica, sans-serif;
+	padding: 20px;	margin: 0;
+	text-align:center;
+	color:#bbb;
+}
+
+h1 small{
+	font: 0.2em normal  Arial, Helvetica, sans-serif;
+	text-transform:uppercase; letter-spacing: 0.2em; line-height: 5em;
+	display: block;
+}
+
+h2 {
+	font: 2em normal Arial, Helvetica, sans-serif;
+	padding-bottom:30px;
+	color:#fff;
+	display:block;
+}
+.bgg
+{
+	background-image: url("/static/s2.jpg");
+  	background-repeat: no-repeat;
+ 	 background-attachment: fixed;
+ 	 background-size: 700px 800px;
+ 	 background-position: left;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+.content{
+	width:278px;
+	margin:0;
+	position:relative;
+	float:right;
+	font-size:12px;
+	line-height:2em;
+	padding:30px 0 30px;
+}
+.col { width:280px; }
+
+#skill { 
+	list-style:none; 
+	padding-top:30px;
+	display: inline;
+}
+
+#skill li { 
+	margin-bottom:70px; 
+	background:#000; 
+	height:5px; 
+	border-radius:3px; 
+	border-left:1px solid #111; 
+	border-top:1px solid #111; 
+	border-right:1px solid #333; 
+	border-bottom:1px solid #333;  
+}
+
+#skill li em { 
+	position:relative; 
+	top:-30px;
+}
+
+.expand { 
+	height:1px; 
+	margin:2px 0; 
+	background:#2187e7; 
+	position:absolute;
+	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.Python       { width:80%;  -moz-animation:l1 2s ease-out;       -webkit-animation:l1 2s ease-out;       }
+.Open-Cv       { width:85%;  -moz-animation:l2 2s ease-out;        -webkit-animation:l2 2s ease-out;        }
+.Machine{ width:75%;  -moz-animation:l3 2s ease-out;      -webkit-animation:l3 2s ease-out;   }
+.c10       { width:85%;  -moz-animation:l4 2s ease-out;        -webkit-animation:l4 2s ease-out;        }
+.c1   { width:40%;  -moz-animation:l5 2s ease-out;   -webkit-animation:l5 2s ease-out;   }
+.c2 { width:60%; -moz-animation:l6 2s ease-out; -webkit-animation:l6 2s ease-out; }
+.c3       { width:80%;  -moz-animation:l7 2s ease-out;       -webkit-animation:l7 2s ease-out;       }
+.c4        { width:60%;  -moz-animation:l8 2s ease-out;        -webkit-animation:l8 2s ease-out;        }
+.c5      { width:70%;  -moz-animation:l9 2s ease-out;      -webkit-animation:l9 2s ease-out;      }
+.c6   { width:60%;  -moz-animation:l10 2s ease-out;   -webkit-animation:l10 2s ease-out;   }
+.c7 { width:60%; -moz-animation:l11 2s ease-out; -webkit-animation:l11 2s ease-out; }
+.c8   { width:35%;  -moz-animation:l12 2s ease-out;   -webkit-animation:l12 2s ease-out;   }
+.c9 { width:25%; -moz-animation:l13 2s ease-out; -webkit-animation:l13 2s ease-out; }
+
+@-moz-keyframes l1      { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes l2		 { 0%  { width:0px;} 100%{ width:85%;} }
+@-moz-keyframes l3	{ 0%  { width:0px;} 60%{ width:75%;} }
+@-moz-keyframes l4		 { 0%  { width:0px;} 100%{ width:85%;} }
+@-moz-keyframes l5   	{ 0%  { width:0px;} 100%{ width:40%;}  }
+@-moz-keyframes l6			 { 0%  { width:0px;} 100%{ width:60%;} }
+@-moz-keyframes l7		 { 0%  { width:0px;} 100%{ width:80%;} }
+@-moz-keyframes l8	 { 0%  { width:0px;} 100%{ width:60%;} }
+@-moz-keyframes l9       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes l10        { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes l11      { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes l12    { 0%  { width:0px;} 100%{ width:35%;}  }
+@-moz-keyframes l13  { 0%  { width:0px;} 20%{ width:25%;} }
+
+@-webkit-keyframes l1      { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes l2		 { 0%  { width:0px;} 100%{ width:85%;} }
+@-webkit-keyframes l3	{ 0%  { width:0px;} 60%{ width:75%;} }
+@-webkit-keyframes l4		 { 0%  { width:0px;} 100%{ width:85%;} }
+@-webkit-keyframes l5   	{ 0%  { width:0px;} 100%{ width:40%;}  }
+@-webkit-keyframes l6			 { 0%  { width:0px;} 100%{ width:60%;} }
+@-webkit-keyframes l7		 { 0%  { width:0px;} 100%{ width:80%;} }
+@-webkit-keyframes l8	 { 0%  { width:0px;} 100%{ width:60%;} }
+@-webkit-keyframes l9       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes l10        { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes l11      { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes l12    { 0%  { width:0px;} 100%{ width:35%;}  }
+@-webkit-keyframes l13  { 0%  { width:0px;} 20%{ width:25%;} }
+
+@media screen and (max-width: 990px) {
+  .bgg {
+    background-image: none;
+  }
+  .content {
+  	float: left;
+  }
+}
+
+</style>
+<!-- <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-Skill-Bar-Animation/index.html" /> -->
+</head>
+<body class="bgg">
+<h1>Programming Skills<small>not bragging though</small></h1>
+<div class="container">
+	<div class="content">
+    	<div class="col">
+        <h2>My Skill</h2>
+        <ul id="skill">
+        <li><span class="expand Python"></span><em>Python</em></li>
+        <li><span class="expand Open-Cv"></span><em>Open-Cv</em></li>
+        <li><span class="expand Machine"></span><em>Machine/Deep Learning</em></li>
+        <li><span class="expand c10"></span><em>FLASK</em></li>
+        <li><span class="expand c1"></span><em>MATLAB</em></li>
+        <li><span class="expand c2"></span><em>SQL</em></li>
+        <li><span class="expand c3"></span><em>C/C++</em></li>
+        <li><span class="expand c4"></span><em>KALI-LINUX</em></li>
+        <li><span class="expand c5"></span><em>html5</em></li>
+        <li><span class="expand c6"></span><em>css3</em></li>
+        <li><span class="expand c7"></span><em>javascript</em></li>
+        <li><span class="expand c8"></span><em>R</em></li>
+        <li><span class="expand c9"></span><em>Visual Basic for applications</em></li>
+
+        </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+{% endblock %}

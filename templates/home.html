@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'home.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper desktop-only">
+        <section id="terminal">
+            <div id="terminal-container">
+                <div class="terminal">
+                    <div class="window-title">
+                        <div class="win-buttons">
+                            <a id="close" class="button" href="#"></a>
+                            <a id="min" class="button" href="#"></a>
+                            <a id="max" class="button" href="#"></a>
+                        </div>
+                        <span class="title">oh-my-ganesha</span>
+                    </div>
+                    <div class="message">
+                        <span class='prompt'><span class='user'>Geek</span><span class="at">@</span><span
+                                class="path">/home/shiva/</span>><span class="caret">$</span></span>
+                        <span class="typed"></span>
+                        <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"></input></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper scroll-wrapper">
+        <div class="top-text">
+            <p class="text-title desktop-view">Shiva</p>
+            <p class="text-title desktop-view">Thavani</p>
+            <p class="text-title mobile-view">Shiva Thavani</p>
+            <div>
+                <a target="_blank" href="https://github.com/shiva2410">
+                    <img class="title-logo" src="static/github.svg">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/shiva-thavani-916177167//">
+                    <img class="title-logo" src="static/linkedin-logo.svg">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/shivathavani/">
+                    <img class="title-logo" src="static/insta.svg">
+                </a>
+                <a target="_blank" href="https://stackoverflow.com/users/11936503/shiva-thavani">
+                    <img class="title-logo" src="static/stack.svg">
+                </a>
+                <a target="_blank" href="mailto:thavani.shiva3@gmail.com?Subject=Hello%20Shiva%20-from-website">
+                    <img class="title-logo" src="static/email.svg">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="textt"><p class="textt"> ~ Willingly exploring chores out of My comfort zone ~</p></div>
+        <div class="middle-text">
+            <p class="text-content">I am a coder at heart; from developing challenging large-scale software to small
+                weekend hackathons.For my daily routine am pursuing Computer Science Engineering from Thapar Institue of information and technology<a href="http://www.thapar.edu"> TIET. </a>  I took Computer Vision for my elective as my interest developed in Facial,Object and Image processing techniques</p> 
+
+
+            <p class="text-content">One of my biggest Ongoing projects is <b>
+                    Attena</b>,
+                an Web application for Facial Recoginiton based Attendance system I developed it from scratch which now is ready to be implemented by TIET. I
+                collated the content, structured the database and designed it.</p>
+
+            <!-- <p class="text-content">I have also co-authored a paper in the Conference of Data Sciences (CODS '17)
+                studying the role of temporal diversity in inferring social ties based on spatio-temporal data. (<a
+                        href="https://arxiv.org/abs/1611.03298">view paper here</a>).</p> -->
+
+            <p class="text-content">I enjoy solo traveling, playing basketball,participating in overnight hackathons and develop side projects. I'm extremely enthusiastic about life, believe that life is too short to work on things that don't interest you, and I'm always on the hunt for learning something new.</p>
+
+            <p class="text-content">You can find me on <a href="http://in.linkedin.com/in/bhardwajrish/">LinkedIn</a>,
+                or email me <a href="mailto:thavani.shiva3@gmail.com?Subject=Hello%20Shiva%20-from-website" target="_top">here</a>.
+            </p>
+
+            <p class="text-content">Let's get in touch!</p>
+
+            <p class="text-content">Shiva Thavani</p>
+
+            <p class="text-content"><a href="timeline">For more about me, my timeline, read on here.</a></p>
+
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

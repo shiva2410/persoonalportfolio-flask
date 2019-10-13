@@ -1,0 +1,119 @@
+{
+  "projects": [
+    {
+      "name": "Autonomous Robo-Car",
+      "link": "robocar",
+      "date": "January 2019",
+      "short": "Developed at TIET, an Atmega328p micro-controller based car capable of detecting and avoiding obstacles",
+      "status": "complete",
+      "weight": 7,
+      "tags": [
+        "Ardiuno",
+        "Autonomous"
+      ],
+      "videos": [
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7qirlXxXDCY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "static/img-r.jpg"
+      ],
+      "tech_used": [
+        "Arduino","Eagle"
+      ],
+      "github": "https://github.com/shiva2410/Autonomus-Robo-car"
+    },
+    {
+      "name": "Crowd Based Face Recognition",
+      "link": "facereco",
+      "date": "July 2019",
+      "short": "Crowd Based Face Recognition and Identification powered by Deep Learning model - CNN,Achived 99.16% accuracy",
+      "status": "Ongoing",
+      "weight": 15,
+      "tags": [
+        "Python",
+        "Computer-vision"
+      ],
+      "tech_used": [
+        "Python","Machine-Learning","OpenCv"
+      ],
+      "photos": [
+        "static/img-fr.jpg"
+      ]
+    },
+    {
+      "name": "Android application",
+      "date": "March 2019",
+      "short": "Android application for location tracking with active feedback form powered by C SHARP",
+      "link": "andro",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "android"
+      ],
+      "tech_used": [
+        "C-SHARP","Android-Studio","Visual Basic"
+      ],
+      "photos": [
+        "static/img-a.jpg"
+      ]
+    },
+      {
+      "name": "Child Death review website",
+      "link": "cdr",
+      "date": "September 2019",
+      "short": "A dynamic website on Child Death review an initiative by Startup Punjab powered by FLASK a PYTHON framework",
+      "status": "Completed",
+      "weight": 10,
+      "tags": [
+        "Python",
+        "FLASK"
+      ],
+      "tech_used": [
+        "Python","Flask","js","css3","html5","bootstrap"
+      ],
+      "photos": [
+        "static/img-c.jpg"
+      ],
+      "github": "https://github.com/shiva2410/405_solution_found"
+    },
+    {
+      "name": "Shiva Thavani personal portfolio",
+      "link": "pp",
+      "date": "October 2019",
+      "short": "Designed a personal website giving breif information about myself,developed it on FLASK a Python framework.",
+      "status": "Completed",
+      "weight": 8,
+      "tags": [
+        "Python",
+        "FLASK"
+      ],
+      "tech_used": [
+        "Python","Flask","js","css3","html5"
+      ],
+      "photos": [
+        "static/img-p.png"
+      ],
+      "github": "https://github.com/shiva2410/persoonalportfolio-flask"
+    },
+    {
+      "name": "Facial Feature extractor",
+      "link": "faceopencv",
+      "date": "May 2019",
+      "short": "An OpenCv-Python software which extracts facial fature like nose,eyes of a human face which can have further applications",
+      "status": "Completed",
+      "weight": 9,
+      "tags": [
+        "Python",
+        "Computer-vision"
+      ],
+      "tech_used": [
+        "Python","OpenCv"
+      ],
+      "photos": [
+        "static/img-ov.jpg"
+      ],
+      "github": "https://github.com/shiva2410/face-features-detector-model"
+      
+    }
+  ]
+}
